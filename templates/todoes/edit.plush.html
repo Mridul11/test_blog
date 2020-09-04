@@ -1,0 +1,8 @@
+<div class="py-4 mb-2">
+  <h3 class="d-inline-block">Edit Todo</h3>
+</div>
+
+<%= formFor(todo, {action: todoPath({ todo_id: todo.ID }), method: "PUT"}) { %>
+  <%= partial("todoes/form.html") %>
+  <%= linkTo(todoPath({ todo_id: todo.ID }), {class: "btn btn-warning", body: "Cancel"}) %>
+<% } %>

@@ -1,0 +1,1 @@
+remove_column("todoes","description", "string")

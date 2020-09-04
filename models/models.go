@@ -19,4 +19,6 @@ func init() {
 		log.Fatal(err)
 	}
 	pop.Debug = env == "development"
+	log.Println("Connection done: ", DB.String()) //<<<<<Report success connection
+
 }
