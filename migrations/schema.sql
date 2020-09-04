@@ -8,3 +8,10 @@ CREATE TABLE IF NOT EXISTS "todoes" (
 "created_at" DATETIME NOT NULL,
 "updated_at" DATETIME NOT NULL
 , "description" TEXT NOT NULL DEFAULT '');
+CREATE TABLE IF NOT EXISTS "widgets" (
+"id" TEXT PRIMARY KEY,
+"name" TEXT NOT NULL,
+"body" TEXT,
+"created_at" DATETIME NOT NULL,
+"updated_at" DATETIME NOT NULL
+);
